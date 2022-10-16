@@ -1,0 +1,215 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	max-width: 1200px;
+	margin: 0 auto;
+	box-shadow: 5px 5px 5px grey;
+}
+
+header {
+	height: 400px;
+}
+
+.header-img {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	height: 300px;
+	background-image: url('./Images/background_header.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.header-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.avatar {
+	width: 200px;
+	height: 200px;
+	margin: auto;
+}
+
+.avatarPhoto {
+	width: 100%;
+	height: 100%;
+	border: 1px solid black;
+	border-radius: 25px;
+}
+
+h1 {
+	width: 400px;
+	height: 100px;
+	margin: auto;
+	color: white;
+	font-size: 4rem;
+	text-align: center;
+}
+
+h2 {
+	font-size: 5rem;
+}
+
+.avatar,
+h1 {
+	z-index: 1;
+}
+
+.nav-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	height: 100px;
+	width: 100%;
+	background-color: rgba(89, 111, 124, 0.938);
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.nav-header li {
+	display: inline-block;
+	align-items: center;
+}
+
+.nav-header li a {
+	color: white;
+	padding: 0 50px;
+	font-size: 2rem;
+	transition: color 0.3s;
+}
+
+.nav-header li a:hover {
+	color: rgb(20, 173, 173);
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.aside-left {
+	width: 30%;
+	line-height: 1.5;
+	border-right: 1px solid black;
+	background-color: rgba(158, 173, 182, 0.938);
+}
+
+.aside-left-nav {
+	height: 60%;
+	margin: 20% 15%;
+	font-size: 2rem;
+}
+
+.aside-left-span {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.content {
+	width: 70%;
+	line-height: 1.3;
+	background-color: rgba(158, 173, 182, 0.938);
+}
+
+.section-summary,
+.section-education,
+.section-experience,
+.section-code_examples,
+.section-language {
+	width: 80%;
+	margin: 0 auto;
+	font-size: 2rem;
+}
+
+.section-summary {
+	height: 320px;
+	padding-top: 20px;
+	text-align: justify;
+}
+
+.summary-text {
+	padding-top: 10px;
+	padding-left: 30px;
+}
+
+.section-education {
+	height: 370px;
+}
+
+.section-education-text {
+	padding-top: 10px;
+}
+
+.education-li {
+	list-style-type: circle;
+	margin-left: 55px;
+}
+
+.section-experience {
+	height: 150px;
+}
+
+.experience-project-text {
+	padding-top: 10px;
+	padding-left: 30px;
+}
+
+.section-code_examples {
+	min-height: 150px;
+	padding-bottom: 20px;
+}
+
+.code_examples-text {
+	padding-top: 10px;
+	padding-left: 30px;
+}
+
+.experience-project-function-text {
+	padding-top: 10px;
+}
+
+.section-language {
+	height: 150px;
+}
+
+.section-language-text {
+	padding-top: 10px;
+	padding-left: 30px;
+}
+
+.footer-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: rgba(158, 173, 182, 0.938);
+	border-top: 1px solid black;
+}
+
+.footer-logo-git {
+	width: 100px;
+	height: 50px;
+}
+
+.footer-logo-rs {
+	width: 150px;
+	height: 50px;
+}
